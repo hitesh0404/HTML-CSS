@@ -1,0 +1,42 @@
+/* #nav{
+    background-color: aqua;
+    display: flex;
+    height: 100px  ;
+    padding: 20px;
+   }
+   a{
+    margin: 30px;
+    text-decoration: none;
+   }
+   .text{
+    color: red;
+   }
+   *{
+    font-size: 30px;
+   }
+
+
+    */
+
+
+
+    div>ul>li{
+        color: aqua;
+    }
+    div>ul>li:hover{
+        color:red ;
+        font-size: 2em;
+        background-color: chartreuse;
+    }
+    div>ul>li::before {
+
+        content: "→ hello ";
+  
+        color: rgb(116, 7, 7);
+  
+      }
+
+      [class=my-cls]>ul{
+        font-weight: 900;
+      }
+      

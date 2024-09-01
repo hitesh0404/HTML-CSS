@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=3.0, user-scalable=no" >
+    <title>Document</title>
+    <style>
+        #first{
+            height: 500px;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            border: 2px solid;
+            border-radius: 50%;
+        }
+        #second{
+            display: grid;
+            align-items: center;
+            justify-content: center; 
+            height: 500px;
+            width: 100%;  
+            background-color: aqua;
+        }
+        #third{
+            position: relative;
+            height: 500px;
+            width: 100%;  
+            background-color: rgb(178, 207, 207);
+        }
+        #third>div{
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first" >
+
+        <div style=" height: 200px; width: 200px; background-color: bisque;"></div>
+</div>    
+
+<div>
+    <div id="second">
+               <div style=" height: 200px; width: 200px; background-color: bisque;">
+
+        </div>
+    </div>
+</div>
+<div>
+    <div id="third">
+               <div style=" height: 200px; width: 200px; background-color: bisque;">
+        </div>
+    </div>
+</div>
+</body>
+</html>

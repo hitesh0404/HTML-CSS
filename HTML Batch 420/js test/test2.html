@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Cat Images</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .row {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .col {
+            padding: 10px;
+        }
+
+        .col img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .col-4 {
+            flex: 0 0 100%;
+        }
+
+        @media (min-width: 576px) {
+            .col-4 {
+                flex: 0 0 100%;
+            }
+
+            .col-8 {
+                flex: 0 0 100%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .col-4 {
+                flex: 0 0 50%;
+            }
+
+            .col-8 {
+                flex: 0 0 50%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .col-4 {
+                flex: 0 0 33.33%;
+            }
+
+            .col-8 {
+                flex: 0 0 66.66%;
+            }
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-4">
+                <img src="C:\Users\admin\Django Project\Main Project Folder\media\images\product_image\random_cat.jpg" alt="">
+            </div>
+            <div class="col col-4">
+                <img src="C:\Users\admin\Django Project\Main Project Folder\media\images\product_image\random_cat.jpg" alt="">
+            </div>
+            <div class="col col-4">
+                <img src="C:\Users\admin\Django Project\Main Project Folder\media\images\product_image\random_cat.jpg" alt="">
+            </div>
+            <div class="col col-4">
+                <img src="C:\Users\admin\Django Project\Main Project Folder\media\images\product_image\random_cat.jpg" alt="">
+            </div>
+            <div class="col col-4">
+                <img src="C:\Users\admin\Django Project\Main Project Folder\media\images\product_image\random_cat.jpg" alt="">
+            </div>
+            <div class="col col-4">
+                <img src="C:\Users\admin\Django Project\Main Project Folder\media\images\product_image\random_cat.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    .float-example {
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      
+      .floated {
+        float: right;
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        margin-right: 100px;
+        
+      }
+      
+      .content {
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #f0f0f0;
+      }         
+.clear {
+    clear: left;
+  }
+    <div class="float-example">
+        <div class="floated">Floated Element</div>
+        <div class="content">Main Content</div>
+        <div class="clear">Clear Element</div>
+      </div>
+</body>
+</html>

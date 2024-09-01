@@ -1,0 +1,1 @@
+document.write('<h1>inside js file</h1>')

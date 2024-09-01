@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .div_rel{/* parent div*/
+            position: relative;
+            height:500px ;
+            width:500px ;
+            left:25%;
+            background-color: blue;
+            
+        }
+        .div_abs{/* child div*/
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+     
+        }
+        #div1{
+            background-color:green;
+            z-index: 1;
+            bottom: 25px;
+            right: 40px;
+        }
+        #div2{
+            background-color: rgb(161, 161, 204);
+            z-index:2; bottom: 15px; 
+            right:20px
+        }
+        #div3{
+            z-index: 3;
+            transition-duration: 1s ;
+            background-color: #0000ff;
+        }
+        #div3:hover{
+            height: 50px;
+            width: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="div_rel">    
+        <div class="div_abs" id="div1" ></div>
+        <div class="div_abs" id="div2" ></div>
+        <div class="div_abs" id="div3"></div>
+       
+    </div>
+</body>
+</html>
