@@ -236,57 +236,211 @@
 
 // console.log(ab(1,2,3))
 
-obj = {
-  name: "John",
-  age: 30,
+// obj = {
+//   name: "John",
+//   age: 30,
 
- }
-// console.log(obj['name'])
-
-
-for (i in obj){
-  console.log(obj[i])
-}
-// console.log(Object.keys(obj))
-// console.log(Object.values(obj))
+//  }
+// // console.log(obj['name'])
 
 
-obj =  {
-  name: "John",
-  age:20,
-  play:function(){
-    this.name='ramu';
-    console.log(this.name);
-    console.log("play");
-    return this.name
-  }
-}
+// for (i in obj){
+//   console.log(obj[i])
 // }
-// console.log(obj.play())
-// console.log(obj.name)
+// // console.log(Object.keys(obj))
+// // console.log(Object.values(obj))
 
 
-student = {
-  name: "John",
-  age:23,
-  subjects:{
-      sub1:{
-          name:'python',
-          duration:2,
-      },
-      sub2:{
-          name:'java',
-          duration:3,
-      }
-
-  }
-}
-console.log(student.subjects.sub2)
+// obj =  {
+//   name: "John",
+//   age:20,
+//   play:function(){
+//     this.name='ramu';
+//     console.log(this.name);
+//     console.log("play");
+//     return this.name
+//   }
+// }
+// // }
+// // console.log(obj.play())
+// // console.log(obj.name)
 
 
+// student = {
+//   name: "John",
+//   age:23,
+//   subjects:{
+//       sub1:{
+//           name:'python',
+//           duration:2,
+//       },
+//       sub2:{
+//           name:'java',
+//           duration:3,
+//       }
 
-arr = [[0,1,2,3,4,5,6,7],'jan','fab','mar','apr','may','jun','jul','aug','sep','oct','nov','dec',]
-console.log(arr.length)
-console.log(arr[0][3])
-ab = Array(12)
-console.log(ab.length,ab)
+//   }
+// }
+// console.log(student.subjects.sub2)
+
+
+
+// arr = [[0,1,2,3,4,5,6,7],'jan','fab','mar','apr','may','jun','jul','aug','sep','oct','nov','dec',]
+// console.log(arr.length)
+// console.log(arr[0][3])
+// ab = Array(12)
+// console.log(ab.length,ab)
+
+// console.log("hello world".localeCompare(''))
+
+
+// a = prompt('enter for a')
+// b = prompt('enter for b')
+// c = prompt('enter for c')
+
+// function this_is_my_fun(a,b,c){
+//     if(a>b && a>c){
+//         if (b<c){
+//              return (`${a} is gretest and ${b} is smallest`);
+//         }
+//         else{
+//             return (`${a} is gretest and ${c} is smallest`)
+//             }
+//     }
+//     else if(b>a && b>c){
+//         if(a<c){
+//             return (`${b} is gretest and ${a} is smallest`);
+//         }
+//         else{
+//             return (`${b} is gretest and ${c} is smallest`)
+//             }
+//     }
+//     else {
+//         if(a<b){
+//             return (`${c} is gretest and ${a} is smallest`);
+//             }
+//             else{
+//                 return (`${c} is gretest and ${b} is smallest`)
+//             } 
+//     }
+// }
+
+// console.log(this_is_my_fun(3,5,6))
+
+
+// function check_small_grate(a,b,c){
+//     if (a>b && a>c){
+//         if(b<c){
+//             return (`${a} is greatest and ${b} is smallest`)
+//         }
+
+//     }
+//     else if (b>a && b>c){
+//         if(a<c){
+//             return (`${b} is gratest and ${a} is smallest`)
+//         }
+//     }
+//     else {
+//         if (a<b){
+//             return (`${c} is gratest and ${a} is smallest`)
+//         }
+//     }
+// }
+// console.log(check_small_grate(3,5,6))
+// // function times()
+
+
+
+
+
+// function times(num){
+//     return function (num1){
+//         return num* num1
+//     }
+// }
+// double = times(2)
+// console.log(double(4))
+// triple = times(3)
+// console.log(triple(4))
+
+
+
+// function sum(...a){
+//     sum=0
+//     for(i of a){
+//         sum += i
+//     }
+//     return sum
+// }
+// console.log(sum(1,2,3,4,5))
+
+
+// function fibonacci(num){
+//     num1=0
+//     num2=1
+//     if(num==1){
+//         console.log(num1)
+//     }
+//     else if(num==2){
+//         console.log(num1)
+//         console.log(num2)
+//         }
+//     else{
+//         for(let i=1;i<=num;i++){
+//             console.log(num1)
+//             res = num1+num2
+//             num1 =num2
+//             num2=res
+//         }
+//     }
+// }
+// fibonacci(17)
+
+
+
+// class Student{
+//     constructor(name){
+//         this.name = name
+//     }
+//     greet (a,b) {
+//         return a+b
+//     }
+// }
+// let student = new Student('hari')
+// console.log(student.name)
+// console.log(student.greet(2,3))
+
+
+
+// console.log('Hello'.charAt(4))
+// console.log('HelloAa'.charCodeAt(6))
+// console.log('Hello'.concat('World'))
+// console.log('HelloH'.lastIndexOf('H'))
+// console.log('hello'.localeCompare('Hi'))
+// console.log('Helloeworld e'.match(/e/g))
+// console.log('hello world'.replace('world','universe'))
+// console.log('hello world'.search('wor'))
+// console.log('hello world'.slice(6,11))
+// console.log('hello world this is'.split(' '))
+// console.log('Hello world'.substr(0,5))
+// console.log('Hello world'.substring(0,5))
+// console.log('Hello world'.toLowerCase())
+// console.log('Hello world'.toString())
+// console.log('Hello World'.toUpperCase())
+
+let body;
+
+document.getElementById('theme').addEventListener('click',
+    function(){
+      body = document.getElementById('body')
+        if (body.classList.contains('theme')){
+            body.classList.remove('theme')
+            document.getElementById('theme').textContent = 'Dark mode'
+        }
+        else{
+            body.classList.add('theme')
+            document.getElementById('theme').textContent = 'Light Mode'
+        }
+        }
+       
+)
