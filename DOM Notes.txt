@@ -1,0 +1,118 @@
+DOM
+Document Object Model
+Its tree like structure
+
+
+
+to select dom element
+we have methods 
+	GetElementById
+	GetElementByClass
+	GetElementByTagName
+	querySelector()
+	querySelectorAll()
+	eg
+	document.GetElementById('main-heading')
+
+DOM Manipulation
+eg
+	const title=document.GetElementById('main-heading')
+	title.style.color='red'
+
+if there i multiple element then we can iterate over them and use the same
+eg
+	const list=document.GetElementById('list')
+	for(i=0;i<list.length;i++){
+		list[i].style.fontSize='5rem';
+	}
+
+
+add element in document
+	parentTag.append(childTag)
+
+access the text
+	js_document_oject.innerText
+		it gives the whole text 
+	js_document_oject.textContent
+		it gives the text with seperated
+ by new line and space or same as it present in document
+	js_document_oject.innerHTML
+		it gives the tag and text both
+
+modifying the text
+
+	we can also chane the value of that text 
+
+	eg	
+		li.innerText='this'
+
+
+Add attribute
+	li.setAttribute('id','the-id')
+Remove Attribute
+	li.removeAttribute('id')
+get the perticular attribute value
+	li.getAttribute('id')
+
+add Class
+	li.classList.add('class name')
+remove class
+	li.classList.remove('class name')
+check the class is present or not
+	li.classList.contains('class name')'
+
+
+remove element
+	li.remove()
+
+
+
+Child Parent
+	Parent::
+	there is two way to get parent node
+		ul.parentNode
+		ul.parentElement
+
+	to get grandparent
+		ul.parentNode.parentNode
+		ul.parentElement.parentElement
+
+Child// for access nodes 
+	ul.childNodes
+	ul.firstChild
+	ul.lastChild
+child //for access element
+	ul.children
+	ul.firstElementChild
+	ul.lastElementChild 
+sibling //for nodes
+	ul.previousSibling
+	ul.nextSibling
+sibling //for element
+	ul.previousElementSibling
+	ul.nextElementSibling
+
+
+
+
+
+
+
+
+Event Listners
+
+ 	element.addEventListner('click',function,true/false)
+
+
+
+
+
+Event Probagation
+	includes 3 phases
+	1.Event Capturing
+	2.Target
+	3.Event Bubbling
+
+
+Event Deligation
+	
