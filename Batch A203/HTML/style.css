@@ -1,0 +1,21 @@
+#my_id{
+    color:blue;
+}
+.text{
+    color: green;
+}
+body{
+    background-color: aqua;
+}
+*{
+    color: rgb(17, 65, 94);
+}
+p{ 
+    color: red;
+}
+.first{
+    color: green;
+}
+#first{
+    color:blue;
+}
