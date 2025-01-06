@@ -42,42 +42,43 @@
 
 
 
+function doSomething(){
+    console.log("hello");
+    return null
+}
+if(1<0)
+doSomething()
+
+pro = new Promise((resolve,reject)=>{
+    if (3>1)
+        resolve(new Promise((resolve,reject)=>
+    {
+        if(2>1)
+            resolve('Hello we did it')
+        else
+            reject('no we can\'t')
+    }))
+    else
+        reject('no number one is greater')
+})
 
 
+function sample(input){
+    console.log(input)
+    return 1
+}
+function sam(input){
+    return input
+}
 
 
+console.log(pro
+.then(sample)
+.then(sam)
+.catch((error)=>console.log(error,'hi')));
 
 
-
-// pro  = new Promise((resolve,reject)=>{
-//     if (3>1)
-//         resolve(new Promise((resolve,reject)=>
-//     {
-//         if(2>1)
-//             resolve('Hello we did it')
-//         else
-//             reject('no we can\'t')
-//     }))
-//     else
-//         reject('no number one is greater')
-// })
-
-
-// function sample(input){
-//     console.log(input)
-//     return 1
-// }
-// function sam(input){
-//     return input
-// }
-
-
-// pro
-// .then(sample).then(sam)
-// .catch((error)=>console.log(error,'hi'))
-
-
-
+//console.log(pro)
 
 
 

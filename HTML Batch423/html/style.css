@@ -1,0 +1,15 @@
+*{
+    text-decoration: underline;
+  }
+  .main{        /*  Class Selector with .(dot)*/
+    color: aqua;/*  property  : value ;    */
+  }
+  #second{     /* Id selector with # */
+    color: blue;
+  }
+  a{           /* Tag or element  selector with tag name */
+    color: brown;
+  }
+  #test{
+    font-size: 50px;
+  }

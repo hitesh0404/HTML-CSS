@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the world with Travel.Io. Discover travel packages, destinations, and more!"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/landig.css" />
+    <title>Travel.Io - Discover the World</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav__logo"><a href="#">Travel.Io</a></div>
+      <ul class="nav__links">
+        <li class="link"><a href="Landing.html">Home</a></li>
+        <li class="link"><a href="features.html">Features</a></li>
+        <li class="link"><a href="about us.html">About Us</a></li>
+        <li class="link"><a href="Contactus.html">Contact Us</a></li>
+      </ul>
+      <div class="search__box">
+        <input type="text" placeholder="Search" aria-label="Search" />
+        <i class="ri-search-line" aria-hidden="true"></i>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="container__left">
+        <div class="content">
+          <h1>DISCOVERING<br />THE WORLD.</h1>
+          <p>
+            Through travel, individuals have the opportunity to immerse
+            themselves in different cultures, try new foods, and witness the
+            beauty of nature. Exploring new places can also challenge one's
+            comfort zone and help to develop important life skills.
+          </p>
+          <div class="btns">
+            <button class="read__more" onclick="window.location.href='#about-us';">
+              Read More
+            </button>
+          </div>
+          <div class="chevrons">
+            <span class="chev__left">
+              <i class="ri-arrow-left-s-line" aria-label="Previous"></i>
+            </span>
+            <span class="chev__right">
+              <i class="ri-arrow-right-s-line" aria-label="Next"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="container__right">
+        <form id="travel-form">
+          <h4>Where do you want to go?</h4>
+          <div class="form__group">
+            <label for="destination">Destination</label>
+            <input
+              type="text"
+              name="destination"
+              id="destination"
+              placeholder="Enter destination"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" required />
+          </div>
+          <button type="submit">Check Travel Package</button>
+        </form>
+
+        <!-- Package details -->
+        <div id="package-details" class="package-card" style="display: none;">
+          <h4>Package Details</h4>
+          <p id="destination-details"></p>
+          <p id="package-rate"></p>
+          <p id="message"></p>
+        </div>
+      </div>
+      <div class="bottom__tracker">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("travel-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get user input
+        const destination = document.getElementById("destination").value.trim().toLowerCase();
+        const date = document.getElementById("date").value;
+
+        // Define package rates for popular Indian destinations
+        const packageRates = {
+          "agra": { rate: "₹5000", message: "Visit the iconic Taj Mahal in Agra!" },
+          "jaipur": { rate: "₹8000", message: "Explore the Pink City, Jaipur, full of history." },
+          "delhi": { rate: "₹7000", message: "Discover the capital city with its rich heritage." },
+          "varanasi": { rate: "₹6000", message: "Experience the spiritual atmosphere of Varanasi." },
+          "mumbai": { rate: "₹9000", message: "Dive into the bustling city of dreams, Mumbai." },
+          "rishikesh": { rate: "₹5000", message: "Relax and rejuvenate in the serene Rishikesh." },
+          "madurai": { rate: "₹6500", message: "Visit the beautiful Meenakshi Temple in Madurai." },
+          "bengaluru": { rate: "₹7000", message: "Explore the garden city and tech hub of India." },
+          "pune": { rate: "₹5500", message: "Discover Pune, a blend of tradition and modernity." },
+          "pushkar": { rate: "₹6000", message: "Visit the famous Pushkar Camel Fair and temples." },
+          "kathmandu": { rate: "₹9500", message: "A trip to the religious city of Kathmandu, Nepal." },
+          "kerala": { rate: "₹12000", message: "Enjoy the backwaters and beaches of Kerala." },
+          "amritsar": { rate: "₹6000", message: "Pay a visit to the Golden Temple in Amritsar." },
+          "bodh gaya": { rate: "₹7000", message: "Experience the spiritual vibes at Bodh Gaya." },
+          "varanasi": { rate: "₹6000", message: "Immerse yourself in the cultural heritage of Varanasi." },
+          "haridwar": { rate: "₹5500", message: "Visit the holy city of Haridwar and Ganga Aarti." }
+        };
+
+        // Default message if destination not found
+        let packageRate = "Please enter a valid Indian destination!";
+        let message = "";
+
+        // Check if destination exists in the list
+        if (packageRates[destination]) {
+          packageRate = packageRates[destination].rate;
+          message = packageRates[destination].message;
+        }
+
+        // Display the package details
+        document.getElementById("destination-details").textContent = `Destination: ${destination.charAt(0).toUpperCase() + destination.slice(1)}`;
+        document.getElementById("package-rate").textContent = `Package Rate: ${packageRate}`;
+        document.getElementById("message").textContent = message;
+
+        // Show package details
+        document.getElementById("package-details").style.display = "block";
+      });
+    </script>
+  </body>
+</html>
