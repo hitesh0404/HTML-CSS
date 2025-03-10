@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <table>
+        <tr>
+          <th>
+            <label for="username">Username</label>
+          </th>
+          <td>
+            <input
+              type="text"
+              name="username"
+              value=""
+              id="username"
+              placeholder="enter username here"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="password">Password</label>
+          </th>
+          <td>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="secret"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="first_name">First Name</label>
+          </th>
+          <td>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="first name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="last_name">Last Name</label>
+          </th>
+          <td>
+            <input type="text" name="last_name" id="last_name" />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="email">Email</label>
+          </th>
+          <td>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="sample@example.com"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Cources</th>
+          <td>
+                <label for="cource" >Python</label>
+                <input type="radio" checked name="cource" id="cource">
+                 <label for="cource">Java</label>
+                <input type="radio" name="cource" id="cource"> 
+                <br>
+                <label for="cource">DS-DA</label>
+                <input type="radio" name="cource" id="cource"> 
+                <label for="cource">DM</label>
+                <input type="radio" name="cource" id="cource">
+          </td>
+        </tr>
+        <tr>
+          <th>Hobbies</th>
+          <td>
+            <tr>
+              <th><label for="play">Play</label></th>
+              <td><input type="checkbox" name="play" id="play" checked /></td>
+              <th><label for="read">Read</label></th>
+              <td><input type="checkbox" name="read" id="read" /></td>
+            </tr>
+            <th><label for="dance">Dance</label></th>
+            <td><input type="checkbox" name="dance" id="dance" /></td>
+            <th><label for="bikeride">BikeRide</label></th>
+            <td><input type="checkbox" name="bikeride" id="bikeride" /></td>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="age">Age</label>
+          </th>
+          <td>
+            <input
+              type="number"
+              min="10"
+              step="1"
+              max="65"
+              id="age"
+              name="age"
+              value="18"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="DOB">DOB</label>
+          </th>
+          <td>
+            <input
+              type="date"
+              min="1960-01-01"
+              max="2006-01-01"
+              name="DOB"
+              id="DOB"
+            />
+          </td>
+          <td>
+            <input type="time" min="10:00" max="18:00" name="DOB" id="DOB" />
+          </td>
+        </tr>
+        <tr>
+          <th><label for="filetype">File Format</label></th>
+          <td>
+            <select name="filetype" id="filetype">
+              <option value="JPG" >JPG</option>
+              <option value="JPEG">JPEG</option>
+              <option value="PNG" selected>PNG</option>
+              <option value="WEBP">WEBP</option>
+              <option value="3GP">3GP</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="photo">Photo</label>
+          </th>
+          <td>
+            <input type="file" id="photo" name="photo" accept="image/*">
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="color">Color</label>
+          </th>
+          <td>
+            <input type="color" id="color" name="color" />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="rating">Rating</label>
+          </th>
+          <td>
+            <input
+              type="range"
+              min="10"
+              max="100"
+              step="10"
+              name="rating"
+              id="rating"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th><label for="address">Address</label></th>
+          <td>
+            <textarea name="address" rows="10" cols="5" id="address"></textarea>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="search" />
+      <input type="reset" value="Clear" />
+    </form>
+  </body>
+</html>

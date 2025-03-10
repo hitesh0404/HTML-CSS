@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            border: 3px solid red;
+            height: 300px;
+        }
+        #first{
+            width: 300px;
+            text-align: justify;
+            float: right;
+        }
+        #second{
+            border: 2px solid blue;
+            clear: left;
+            background-color: rgb(246, 255, 0);
+        } 
+        @media (max-width:760px) {
+             #second{
+                background-color: aqua;
+        } 
+        }       
+    </style>
+</head>
+<body>
+    <div class="parent" >
+        <div class="child" id="first" >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus temporibus harum officiis quis possimus cupiditate veritatis sit aliquid doloremque impedit, molestiae esse sapiente maiores sunt! Adipisci praesentium architecto quos illum?
+        </div>
+        <div class="child" id="second" >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet natus ipsam impedit, eaque dicta quaerat saepe. Accusantium mollitia deserunt unde, ducimus expedita ut dolores quam veniam impedit sed! A, iusto.
+        </div>
+    </div>
+</body>
+</html>
